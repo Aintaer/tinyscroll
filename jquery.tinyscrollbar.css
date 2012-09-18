@@ -1,0 +1,46 @@
+/** Behanced Tiny Scrollbar
+****************************************/
+.be-scroll-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.be-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute; }
+.be-viewport::-webkit-scrollbar {
+  display: none; }
+
+.be-content {
+  position: relative; }
+
+.be-scrollbar {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  z-index: 1;
+  margin: 0 5px; }
+
+.be-scrollbar.scrolling .be-thumb {
+  background: rgba(0, 0, 0, 0.1); }
+
+.be-scrollbar.disable {
+  display: none; }
+
+.be-track {
+  height: 100%;
+  position: relative;
+  padding: 0 1px; }
+
+.be-thumb {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
