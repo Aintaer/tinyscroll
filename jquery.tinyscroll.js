@@ -275,6 +275,6 @@
         .find('.be-content').append($children).end(), options));
     });
     return this;
-  }; // $.fn.tinyscrollbar
+  }; // $.fn.tinyscroll
 
 }(jQuery));
