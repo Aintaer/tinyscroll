@@ -1,23 +1,11 @@
 /*
- * Behanced Tiny Scrollbar 0.92
- * 2/29/2012
+ * Tinyscroll 0.93
+ * 9/17/2012
  *
- * Based on original Tiny Scrollbar by Maarten Baijs
- *
- */
-
-/*!
- * Tiny Scrollbar 1.66
+ * Based on original Tiny Scrollbar 1.66 by Maarten Baijs
  * http://www.baijs.nl/tinyscrollbar/
  *
- * Copyright 2010, Maarten Baijs
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.opensource.org/licenses/gpl-2.0.php
- *
- * Date: 13 / 11 / 2011
- * Depends on library: jQuery
- * 
+ * Requires: jQuery
  */
 
 (function($){
@@ -66,7 +54,6 @@
 
     return (hasPostMessage ? setZeroTimeout : function(fn) {window.setTimeout(fn,0);});
   }());
-
 
   function Scrollbar(root, options){
     var oSelf = this,
@@ -265,7 +252,7 @@
     return initialize();
   } // Scrollbar
 
-  $.fn.tinyscrollbar = function(options) { 
+  $.fn.tinyscroll = function(options) { 
     if ($(this).data('tsb')) {
       if (options === "destroy") {
         $(this).data('tsb').destroy();
